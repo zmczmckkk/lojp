@@ -211,14 +211,14 @@
 
           
           <li>
-            <a href="/lastOrigion/about/">关于</a>
+            <a href="/lastOrigion/archive/">归档</a>
           </li>
           
           
 
           
           <li>
-            <a href="/lastOrigion/archive/">归档</a>
+            <a href="/lastOrigion/about/">关于</a>
           </li>
           
           
@@ -406,9 +406,7 @@
 <div class="panel-heading">
 <h4 class="panel-title">
 <a data-toggle="collapse" data-parent="#accordion" 
-href="#collapseThree">
-阵容配置
-</a>
+href="#collapseThree">阵容配置</a>
 </h4>
 </div>
 <div id="collapseThree" class="panel-collapse collapse">
@@ -429,8 +427,6 @@ href="#collapseThree">
 </div>
 </div>
 
-
-
         <hr>
         <!-- Pager -->
         <ul class="pager">
@@ -439,117 +435,12 @@ href="#collapseThree">
         </ul>
 
         
-        <!-- tip start -->
-        <div class="tip">
-          <p>
-            如果您喜欢我的帖子，请多给我一些赞吧~非常感谢！
-          </p>
-        </div>
-        <!-- tip end -->
-        
 
-        
-        <!-- Sharing Srtart -->
-        <!-- Social Social Share Post -->
-<!-- Docs:https://github.com/overtrue/share.js -->
-
-<div class="social-share" data-initialized="true" data-disabled="tencent ,douban ,qzone ,linkedin ,facebook ,google ,diandian" data-wechat-qrcode-helper="" align="center">
-  <ul class="list-inline text-center social-share-ul">
-    <li class="social-share-li">
-      <a target="_blank" class="social-share-icon icon-twitter">
-        <i class="fa fa-twitter fa-1x" aria-hidden="true"></i>
-      </a>
-    </li>
-    <li class="social-share-li">
-      <a class="social-share-icon icon-wechat">
-        <i class="fa fa-weixin fa-1x" aria-hidden="true"></i>
-      </a>
-    </li>
-    <li class="social-share-li">
-      <a target="_blank" class="social-share-icon icon-weibo">
-        <i class="fa fa-weibo fa-1x" aria-hidden="true"></i>
-      </a>
-    </li>
-    <li class="social-share-li">
-      <a target="_blank" class="social-share-icon icon-qq">
-        <i class="fa fa-qq fa-1x" aria-hidden="true"></i>
-      </a>
-    </li>
-    <li class="social-share-li">
-      <a target="_blank" class="social-share-icon" href="mailto:?subject=1-5E 禽贝核师 4带1 附赠视频壁纸~&body=Hi,I found this website and thought you might like it https://gitee.com/zmczmckkk/lastOrigion/lastOrigion/2021/03/17/1-5E-禽贝核师-4带1-附赠视频壁纸/">
-        <i class="fa fa-envelope fa-1x" aria-hidden="true"></i>
-      </a>
-    </li>
-  </ul>
-</div>
-
-<!-- css & js -->
-<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/social-share.js/1.0.16/css/share.min.css"> -->
-<script defer="defer" async="true" src="https://cdnjs.cloudflare.com/ajax/libs/social-share.js/1.0.16/js/social-share.min.js"></script>
-
-        <!-- Sharing End -->
         
         <hr>
 
         <!-- comments start -->
-        <!-- 1. gitalk comment -->
-
-<!-- gitalk start -->
-<!-- Docs:https://github.com/gitalk/gitalk/blob/master/readme-cn.md -->
-
-<div id="gitalk-container"></div>
-
-<!-- <script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.js"></script> -->
-<script src="/lastOrigion/js/comment/gitalk.js"></script>
-
-<script>
-  var gitalk = new Gitalk({
-    clientID: '',
-    clientSecret: '',
-    repo: '',
-    owner: '',
-    admin: '',
-    id: 'Wed Mar 17 2021 22:51:56 GMT+0800', // Ensure uniqueness and length less than 50
-    distractionFreeMode: false, // Facebook-like distraction free mode
-    perPage: 10 ,
-    pagerDirection: 'last',
-    createIssueManually: false ,
-    language: 'en'
-  });
-  gitalk.render('gitalk-container');
-
-  var gtFolded = () => {
-    setTimeout(function() {
-      let markdownBody = document.getElementsByClassName("markdown-body");
-      let list = Array.from(markdownBody);
-      list.forEach(item => {
-        if (item.clientHeight > 250) {
-          item.classList.add('gt-comment-body-folded');
-          item.style.maxHeight = '250px';
-          item.title = 'Click to Expand';
-          item.onclick = function() {
-            item.classList.remove('gt-comment-body-folded');
-            item.style.maxHeight = '';
-            item.title = '';
-            item.onclick = null;
-          };
-        }
-      })
-    }, 800);
-  }
-</script>
-
-<!-- gitalk end -->
-
-
-
-<!-- 2. gitment comment -->
-
-
-
-<!-- 3. disqus comment -->
-
-
+        <!--<partial('_partial/comment',{cache: true}) > -->
         <!-- comments end -->
         <hr>
 
@@ -564,9 +455,7 @@ href="#collapseThree">
         <strong class="toc-title">目录</strong>
         
           <ol class="toc-nav"><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#阵容配置"><span class="toc-nav-number">1.</span> <span class="toc-nav-text">阵容配置</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-4"><a class="toc-nav-link" href="#accordion"><span class="toc-nav-number">1.0.1.</span> <span class="toc-nav-text">
-
 阵容配置
-
 </span></a></li></ol></li></ol></li></ol>
         
         </div>
@@ -616,51 +505,6 @@ href="#collapseThree">
 </article>
 
 
-
-<!-- anchorjs start -->
-<!-- async load function -->
-<!-- anchor-js, Doc:http://bryanbraun.github.io/anchorjs/ -->
-<script type="text/javascript">
-  // async load function
-  function async (u, c) {
-    var d = document,
-      t = 'script',
-      o = d.createElement(t),
-      s = d.getElementsByTagName(t)[0];
-    o.src = u;
-    if (c) {
-      o.addEventListener('load', function(e) {
-        c(null, e);
-      }, false);
-    }
-    s.parentNode.insertBefore(o, s);
-  };
-</script>
-<script type="text/javascript">
-  //anchor-js, Doc:http://bryanbraun.github.io/anchorjs/
-  async ("https://cdn.bootcss.com/anchor-js/1.1.1/anchor.min.js", function() {
-    anchors.options = {
-      visible: 'hover',
-      placement: 'left',
-      // icon: 'ℬ'
-      icon: '❡'
-    };
-    anchors.add().remove('.intro-header h1').remove('.subheading').remove('.sidebar-container h5');
-  });
-</script>
-<style>
-  /* place left on bigger screen */
-  @media all and (min-width: 800px) {
-    .anchorjs-link {
-      position: absolute;
-      left: -0.75em;
-      font-size: 1.1em;
-      margin-top: -0.1em;
-    }
-  }
-</style>
-
-<!-- anchorjs end -->
 
 
 
