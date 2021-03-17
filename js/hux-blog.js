@@ -22,7 +22,7 @@ $(function() {
 
 // responsive tables
 $(document).ready(function() {
-	 $("table").wrap("<div class='table-responsive'></div>");
+    $("table").wrap("<div style='overflow:scroll;'></div>")
 	$("table").addClass("table");
 });
 
