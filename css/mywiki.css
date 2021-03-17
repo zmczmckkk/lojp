@@ -1,0 +1,9 @@
+.table tbody tr td{
+  vertical-align: middle;
+  text-align: center;
+}
+table tr,td,caption{
+
+border: 1px solid black;
+
+}
