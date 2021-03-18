@@ -1,7 +1,14 @@
 .table tbody tr td{
   vertical-align: middle;
   text-align: center;
+  padding: 2px;
+  font-size: 13px;
+}
+.table tbody tr td img{
+  padding: 2px;
 }
 
+
 table{table-layout: fixed;}
+
 
