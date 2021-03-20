@@ -3070,7 +3070,7 @@ fieldset[disabled] input[type=checkbox],fieldset[disabled] input[type=radio],inp
 
 select.input-sm {
     height: 30px;
-    line-height: 30px
+    /*line-height: 30px*/
 }
 
 select[multiple].input-sm,textarea.input-sm {
