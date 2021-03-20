@@ -63,11 +63,12 @@
 
   <!-- Place this tag in your head or just before your close body tag. -->
   <script async="async" defer="defer" src="https://buttons.github.io/buttons.js"></script>
+  <!-- Custom CSS -->
+
+
   <!-- Bootstrap Core CSS -->
   <link rel="stylesheet" href="/lastOrigion/css/bootstrap.min.css" />
-
-  <!-- Custom CSS -->
-  <link rel="stylesheet" href="/lastOrigion/css/beantech.min.css" />
+  <link rel="stylesheet" href="/lastOrigion/css/dataTables.bootstrap.min.css" />
 
   <!-- Pygments Highlight CSS -->
   
@@ -79,7 +80,7 @@
 <link rel="stylesheet" href="../css/livemylife.css">
 <link rel="stylesheet" href="../css/mywiki.css">
 
-
+  <link rel="stylesheet" href="/lastOrigion/css/beantech.min.css" />
   
   <!-- wave start -->
   <link rel="stylesheet" href="/lastOrigion/css/wave.css" />
@@ -211,13 +212,6 @@
 
           
           <li>
-            <a href="/lastOrigion/archive/">归档</a>
-          </li>
-          
-          
-
-          
-          <li>
             <a href="/lastOrigion/about/">关于</a>
           </li>
           
@@ -225,7 +219,7 @@
 
           
           <li>
-            <a href="/lastOrigion/tags/">标签</a>
+            <a href="/lastOrigion/archive/">归档</a>
           </li>
           
           
@@ -233,6 +227,13 @@
           
           <li>
             <a href="/lastOrigion/categories/">分类</a>
+          </li>
+          
+          
+
+          
+          <li>
+            <a href="/lastOrigion/tags/">标签</a>
           </li>
           
           
@@ -511,9 +512,9 @@
 
 <!-- jQuery -->
 <script type="text/javascript" src="/lastOrigion/js/jquery.min.js"></script>
-<!-- <script type="text/javascript" src="/lastOrigion/js/jquery.js"></script> -->
-<!-- <script type="text/javascript" src="//cdnjs.loli.net/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
-
+<!-- DataTables -->
+<script type="text/javascript" src="/lastOrigion/js/jquery.dataTables.min.js"></script>
+<script type="text/javascript" src="/lastOrigion/js/dataTables.bootstrap.min.js"></script>
 <!-- Bootstrap Core JavaScript -->
 <script type="text/javascript" src="/lastOrigion/js/bootstrap.min.js"></script>
 
@@ -553,7 +554,16 @@
   <script type="text/javascript" src="/lastOrigion/js/viewer/pic-viewer.js"></script>
   <!-- viewer end -->
 
-
+<script>
+  $(document).ready(function() {
+    $('#kantansucha').DataTable( {
+      order: [[ 1, 'desc' ], [ 0, 'asc' ]],
+      "oLanguage": {
+        "sUrl": "../../../../js/page_zh_CN.json"
+      }
+    } );
+  } );
+</script>
 <script>
   // async load function
   function async (u, c) {

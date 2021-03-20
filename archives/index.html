@@ -63,11 +63,12 @@
 
   <!-- Place this tag in your head or just before your close body tag. -->
   <script async="async" defer="defer" src="https://buttons.github.io/buttons.js"></script>
+  <!-- Custom CSS -->
+
+
   <!-- Bootstrap Core CSS -->
   <link rel="stylesheet" href="/lastOrigion/css/bootstrap.min.css" />
-
-  <!-- Custom CSS -->
-  <link rel="stylesheet" href="/lastOrigion/css/beantech.min.css" />
+  <link rel="stylesheet" href="/lastOrigion/css/dataTables.bootstrap.min.css" />
 
   <!-- Pygments Highlight CSS -->
   
@@ -79,7 +80,7 @@
 <link rel="stylesheet" href="../css/livemylife.css">
 <link rel="stylesheet" href="../css/mywiki.css">
 
-
+  <link rel="stylesheet" href="/lastOrigion/css/beantech.min.css" />
   
   <!-- wave start -->
   <link rel="stylesheet" href="/lastOrigion/css/wave.css" />
@@ -211,13 +212,6 @@
 
           
           <li>
-            <a href="/lastOrigion/archive/">归档</a>
-          </li>
-          
-          
-
-          
-          <li>
             <a href="/lastOrigion/about/">关于</a>
           </li>
           
@@ -225,7 +219,7 @@
 
           
           <li>
-            <a href="/lastOrigion/tags/">标签</a>
+            <a href="/lastOrigion/archive/">归档</a>
           </li>
           
           
@@ -233,6 +227,13 @@
           
           <li>
             <a href="/lastOrigion/categories/">分类</a>
+          </li>
+          
+          
+
+          
+          <li>
+            <a href="/lastOrigion/tags/">标签</a>
           </li>
           
           
@@ -392,6 +393,21 @@
                   <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
                   </li> -->
           <li>
+            03-20
+            <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+            <a href="/lastOrigion/2021/03/20/勘探速查/" style="color: #0085a1">
+              <span>
+                资源勘探速查
+              </span>
+            </a>
+            <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
+          </li>
+          
+          <!-- <li class="listing-item">
+                  <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
+                  <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
+                  </li> -->
+          <li>
             03-19
             <i class="fa fa-angle-double-right" aria-hidden="true"></i>
             <a href="/lastOrigion/2021/03/19/情人节全图参考攻略/" style="color: #0085a1">
@@ -473,22 +489,6 @@
         <hr>
     
         <!-- Featured Tags -->
-
-<section>
-  <!-- no hr -->
-  <h5><a href="/lastOrigion/tags/">特色标签</a></h5>
-  <div class="tags">
-    
-    
-    <a href="/lastOrigion/tags/#LastOrigion" title="LastOrigion" rel="1">LastOrigion</a>
-    
-    
-    
-    <a href="/lastOrigion/tags/#情人节" title="情人节" rel="1">情人节</a>
-    
-    
-  </div>
-</section>
 
 
         <hr>
@@ -574,6 +574,10 @@
 <div class="widget">
   <ul>
     
+    <a href="../2021/03/20/%E5%8B%98%E6%8E%A2%E9%80%9F%E6%9F%A5/">
+      <li>资源勘探速查</li>
+    </a>
+    
     <a href="../2021/03/19/%E6%83%85%E4%BA%BA%E8%8A%82%E5%85%A8%E5%9B%BE%E5%8F%82%E8%80%83%E6%94%BB%E7%95%A5/">
       <li>情人节全图参考攻略</li>
     </a>
@@ -594,14 +598,6 @@
     
         <!-- Friends Blog -->
 
-<!-- <h5>FRIENDS</h5> -->
-<h5><a href="/lastOrigion/">好友</a></h5>
-<ul class="list-inline">
-  
-  <li><a href="https://zmczmckkk.gitee.io/lastorigion/" target="_blank">noname</a></li>
-  
-</ul>
-
 
         <hr>
     
@@ -609,7 +605,7 @@
     <!-- <h5>ARCHIVES</h5> -->
     <h5><a href="/lastOrigion/archives/">归档</a></h5>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="2021/03/">March 2021</a><span class="archive-list-count">3</span></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="2021/03/">March 2021</a><span class="archive-list-count">4</span></li></ul>
     </div>
 
 
@@ -723,9 +719,9 @@
 
 <!-- jQuery -->
 <script type="text/javascript" src="/lastOrigion/js/jquery.min.js"></script>
-<!-- <script type="text/javascript" src="/lastOrigion/js/jquery.js"></script> -->
-<!-- <script type="text/javascript" src="//cdnjs.loli.net/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
-
+<!-- DataTables -->
+<script type="text/javascript" src="/lastOrigion/js/jquery.dataTables.min.js"></script>
+<script type="text/javascript" src="/lastOrigion/js/dataTables.bootstrap.min.js"></script>
 <!-- Bootstrap Core JavaScript -->
 <script type="text/javascript" src="/lastOrigion/js/bootstrap.min.js"></script>
 
@@ -765,7 +761,16 @@
   <script type="text/javascript" src="/lastOrigion/js/viewer/pic-viewer.js"></script>
   <!-- viewer end -->
 
-
+<script>
+  $(document).ready(function() {
+    $('#kantansucha').DataTable( {
+      order: [[ 1, 'desc' ], [ 0, 'asc' ]],
+      "oLanguage": {
+        "sUrl": "../../../../js/page_zh_CN.json"
+      }
+    } );
+  } );
+</script>
 <script>
   // async load function
   function async (u, c) {
