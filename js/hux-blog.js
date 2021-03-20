@@ -23,7 +23,7 @@ $(function() {
 // responsive tables
 $(document).ready(function() {
     $("table").wrap("<div style='overflow:scroll;'></div>")
-	$("table").addClass("table");
+	$("table").addClass("table table-striped");
 });
 
 // responsive embed videos
