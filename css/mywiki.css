@@ -5,9 +5,9 @@
   font-size: 13px;
 }
 
-.table tbody tr td img{
-  padding: 2px;
-}
+/*.table tbody tr td img{*/
+  /*padding: 2px;*/
+/*}*/
 table.dataTable thead tr th{
   vertical-align: middle;
   text-align: center;
