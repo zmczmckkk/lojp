@@ -1,5 +1,6 @@
 let imgs = document.getElementsByTagName("img");
 let img = Array.from(imgs);
+var x = 99999999;
 let options = {
   navbar: 2,
   title: 2,
@@ -21,9 +22,13 @@ let options = {
   },
   fullscreen: false
 };
-img.filter(item => item.getAttribute("alt"))
+img
+    // .filter(item => item.getAttribute("alt"))
   .forEach(item => {
-    let id = item.getAttribute("alt");
-    item.setAttribute("id", id);
-    const viewer = new Viewer(document.getElementById(id), options);
+    if($(item).hasClass("img-responsive")){
+      let id = x--;
+      item.setAttribute("id", id);
+      const viewer = new Viewer(document.getElementById(id), options);
+    }
+
   });
