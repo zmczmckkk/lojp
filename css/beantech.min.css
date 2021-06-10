@@ -200,6 +200,7 @@ pre code {
 }
 
 .post-container ul, .post-container ol {
+    padding-inline-start: 10px
 }
 
 @media screen and (max-width: 768px) {
