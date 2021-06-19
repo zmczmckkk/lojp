@@ -72,13 +72,13 @@
 
   <!-- Pygments Highlight CSS -->
   
-<link rel="stylesheet" href="../css/highlight.css">
-<link rel="stylesheet" href="../css/widget.css">
-<link rel="stylesheet" href="../css/rocket.css">
-<link rel="stylesheet" href="../css/signature.css">
-<link rel="stylesheet" href="../css/catalog.css">
-<link rel="stylesheet" href="../css/livemylife.css">
-<link rel="stylesheet" href="../css/mywiki.css">
+<link rel="stylesheet" href="../../../../css/highlight.css">
+<link rel="stylesheet" href="../../../../css/widget.css">
+<link rel="stylesheet" href="../../../../css/rocket.css">
+<link rel="stylesheet" href="../../../../css/signature.css">
+<link rel="stylesheet" href="../../../../css/catalog.css">
+<link rel="stylesheet" href="../../../../css/livemylife.css">
+<link rel="stylesheet" href="../../../../css/mywiki.css">
 
   <link rel="stylesheet" href="/lojp/css/beantech.min.css" />
   
@@ -140,10 +140,10 @@
   <!--[if lt IE 9]> <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script> <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script> <![endif]-->
 
   <!-- ga & ba script hoook -->
-  <link rel="canonical" href="https://zmczmckkk.github.io/lojp/lojp/archive/">
+  <link rel="canonical" href="https://zmczmckkk.github.io/lojp/lojp/2021/06/19/天命之子日服WB优化指南/">
   <title>
     
-    归档 - lastOrigionWiki
+    天命之子日服WB优化指南 - lastOrigionWiki
     
   </title>
 <meta name="generator" content="Hexo 4.2.1"></head>
@@ -291,8 +291,8 @@
 
   <style type="text/css">
     header.intro-header {
-       /*page*/
-        background-image: url('/lojp/img/header_img/archive_bg.jpg');
+       /*post*/
+        background-image: url('/lojp/img/header_img/newhome_bg.jpg');
       
     }
 
@@ -310,11 +310,41 @@
       <div class="row">
         <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
           
-          <div class="site-heading">
-            <img src="/lojp/img/header_img/main_logo.png" class="img-responsive" alt="Responsive image">
-            <!--<h1>= page.title || config.title </h1>-->
-            <!--<hr class="small">-->
-            <span class=" meta meta-bg ">嗨，这里是归档列表~</span>
+          <div class="post-heading">
+            <div class="tags">
+              
+            </div>
+            <h1>天命之子日服WB优化指南</h1>
+            <span class="meta meta-bg"></span>
+            <div class="blank_box"></div>
+            <span class="meta meta-bg">
+              作者： Lo日服萌新 发布时间：
+              2021-06-19
+            </span>
+
+
+            
+            <!-- WordCount start -->
+            <div class="blank_box"></div>
+            <span class=" meta meta-bg">
+              预计阅读时间: <span class="post-count">4</span> 分
+            </span>
+            <div class="blank_box"></div>
+            <span class="meta meta-bg">
+              字数约： <span class="post-count">1.2k</span>
+            </span>
+            <div class="blank_box"></div>
+            <!-- WordCount end -->
+            
+            
+            <!-- 不蒜子统计 start -->
+            <span class="meta meta-bg" id="busuanzi_container_page_pv">
+              访问量： <span id="busuanzi_value_page_pv"><i class="fa fa-spinner fa-spin"></i></span>
+            </span>
+            <!-- 不蒜子统计 end -->
+            
+
+
           </div>
           
         </div>
@@ -355,374 +385,392 @@
 	Friends Blog、
 	anchorjs、
 	) -->
-	<!-- Main Content -->
-<div class="container">
-  <div class="row">
-    
+	<!-- Modify by Yu-Hsuan Yen -->
+<!-- Post Content -->
+<article>
+  <div class="container">
+    <div class="row">
+      <!-- Post Container class-post-container-->
+      <div class="col-lg-8 col-lg-offset-1 col-md-10 col-md-offset-1 post-container">
 
-    <!-- USE SIDEBAR -->
-    <!-- Post Container -->
-    <div class="
-                col-lg-8 col-lg-offset-1
-                col-md-8 col-md-offset-1
-                col-sm-12
-                col-xs-12
-                post-container
-            ">
+        <div class="panel panel-info">
+        <div class="panel-heading">
+        <h3 class="panel-title" id="前言">前言</h3>
+        </div>
+        <div class="panel-body">
+        1，此优化适合任何阵容，不管你是跨属性刀队，还是单属性刀队。<br>
+        2，优化是个慢功夫，毕竟2排20个角色，不可能马上搞定，一定要有点耐心。<br>
+        3，具体步骤，请按照下面列出来的内容逐个优化。
+        </div>
+</div>
+<div class="panel panel-info">
+        <div class="panel-heading">
+        <h3 class="panel-title" id="阵容配置优化">阵容配置优化</h3>
+        </div>
+        <div class="panel-body">
 
-      
-<!-- Main Content -->
-<div class="container">
-  <div class="row">
-    <div class="col-lg-8 col-lg-offset-0 col-md-10 col-md-offset-1">
-      <!-- 归档列表 -->
+<div class="panel-group" >
+    <div class="panel panel-default  panel-info">
+        <div class="panel-heading">
+            <h4 class="panel-title" id="站位优化">
+                <a style="display: block" data-toggle="collapse" data-parent="#accordion" href="#collapse1">站位优化</a>
+            </h4>
+        </div>
+        <div id="collapse1" class="panel-collapse collapse">
+            <div class="panel-body">        
+<img src="../../../../img/wiki/youhaupeizhi01.jpg" alt="Responsive image" class="img-responsive left-block">   
 
-      
+<pre><code>1，后排放置：妨害角色，输出角色，重要的辅助角色。 
+  （这些角色如果放在前排，被控制了，对输出伤害影响比较大。）
+2，前排放置：技能为回合的辅助或影响FT输出的角色（例如Fever Time的时候，
+   水刀打FT。后排只能放一个水刀，其他的水角色放前排）。他们即使吃到
+   boss的控制也不会有太大影响。
+3，后排站位顺序：妨害(给施加各种减溢状态)，状态辅助
+  （为刀卡提供攻击力，双刃，加速等等），输出刀，秒CD充能辅助（秒CD主要指光琴）。
+  大家可能观察一下战斗不难发现。每次FT（Fever Time）以后，
+  前后2排角色，cd都是完毕的，并且会按照从左到右的站位顺序打出各自的技能。
+  所以利用这个小机制，FT以后，我们的理想的输出方式是这样的：
+  1，妨害先给boss上减溢状态。辅助给刀加上各种状态。
+  2，刀卡ss打出输出。
+  3，秒CD辅助把刀卡的ss技能cd秒掉。
+  4，充能辅助将刀的技能条拉起来。
+  5，刀卡技能cd被秒，技能条拉满，再一次打出ss输出。给人一种SS技能2连打的效果。
+  这样一个顺序是比较合理的。</code></pre></div>
+</div>
+</div>
+</div>
 
-      <!-- 归档列表 -->
 
-      
-      <div class="one-tag-list">
-        <span class="fa fa-calendar-times-o listing-seperator" id="2021">
-          <span class="tag-text">2021</span>
-        </span>
-        <ul>
+<div class="panel-group" >
+    <div class="panel panel-default panel-info">
+        <div class="panel-heading">
+            <h4 class="panel-title" id="加速优化">
+                <a style="display: block" data-toggle="collapse" data-parent="#accordion" href="#collapse3">加速优化</a>
+            </h4>
+        </div>
+        <div id="collapse3" class="panel-collapse collapse">
+            <div class="panel-body">
+<img src="../../../../img/wiki/jiasu01.jpg" alt="Responsive image" class="img-responsive left-block">   
+
+<pre><code>1，如图蓝圈标记，基本上每个属性都至少有一个加速。
+  （木加速，光加速，火加速，水加速，暗加速） </code></pre></div>
+</div>
+</div>
+</div>
+
+
+
+</div>
+</div>
+
+<div class="panel panel-info">
+        <div class="panel-heading">
+        <h3 class="panel-title" id="技能优化">技能优化</h3>
+        </div>
+        <div class="panel-body">
+
+<div class="panel-group" >
+    <div class="panel panel-default  panel-info">
+        <div class="panel-heading">
+            <h4 class="panel-title" id="如何设置技能顺序">
+                <a style="display: block" data-toggle="collapse" data-parent="#accordion" href="#collapse11">如何设置技能顺序</a>
+            </h4>
+        </div>
+        <div id="collapse11" class="panel-collapse collapse">
+            <div class="panel-body">
+
+<ol>
+<li>点击技能设置按钮<img src="../../../../img/wiki/shunxuanniu01.jpg" border="0" width="100">，弹出技能调整面板即可调整技能顺序。<img src="../../../../img/wiki/jinengtiaozheng01.jpg" alt="Responsive image" class="img-responsive left-block">   
+
+
+</li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+
+<div class="panel-group" >
+    <div class="panel panel-default panel-info">
+        <div class="panel-heading">
+            <h4 class="panel-title" id="角色技能顺序优化">
+                <a style="display: block" data-toggle="collapse" data-parent="#accordion" href="#collapse12">角色技能顺序优化</a>
+            </h4>
+        </div>
+        <div id="collapse12" class="panel-collapse collapse">
+            <div class="panel-body">
+
+<pre><code>1，首先，战斗中，角色技能顺序如果是未设置状态。角色会自动根据情况自动释放技能。
+   角色技能顺序如果是已设置状态。角色会根据已设置的技能顺序循环释放技能。
+   比如技能设置：SNNS，战斗中执行顺序就是SNNSSNNSSNNSSNNS.....
+2,一般回合型技能可以只设置一个，因为回合技能一般能维持很长一段时间，比如火鱼人：</code></pre><img src="../../../../img/wiki/huoyurenjineng01.jpg" alt="Responsive image" class="img-responsive left-block">   
+
+<pre><code>3，如果ss技能ns技能都需要，则尽量分配平均一些，比如光狼：</code></pre><img src="../../../../img/wiki/guanglangjn01.jpg" alt="Responsive image" class="img-responsive left-block">  
+
+<pre><code>因为光狼的n技能减少BOSS n技能防御10秒，ss技能减少SS技能防御和全防御12秒。
+4，刀卡的话，主要根据输出类型调整即可，比如暗师匠和水伊芙，都是靠SS技能输出：</code></pre><img src="../../../../img/wiki/wbdaojienng01.jpg" alt="Responsive image" class="img-responsive left-block">  
+
+
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="panel-group" >
+    <div class="panel panel-default panel-info">
+        <div class="panel-heading">
+            <h4 class="panel-title" id="队长技设置">
+                <a style="display: block" data-toggle="collapse" data-parent="#accordion" href="#collapse122">队长技设置</a>
+            </h4>
+        </div>
+        <div id="collapse122" class="panel-collapse collapse">
+            <div class="panel-body">
+
+<pre><code>1，队长技根据BOSS的属性，或其他特殊情况，选择对应的队长即可
+2，常用的队长(不限于这3个，很多其他的也可以)：</code></pre><img src="../../../../img/wiki/lvbu.jpg" border="0" width="100">
+<img src="../../../../img/wiki/huodabi.jpg" border="0" width="100">
+<img src="../../../../img/wiki/muyuren.jpg" border="0" width="100">
+
+
+
+</div>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+
+<div class="panel panel-info">
+        <div class="panel-heading">
+        <h3 class="panel-title" id="装备优化">装备优化</h3>
+        </div>
+        <div class="panel-body">
+
+<div class="panel-group" >
+    <div class="panel panel-default  panel-info">
+        <div class="panel-heading">
+            <h4 class="panel-title" id="输出刀装备优化">
+                <a style="display: block" data-toggle="collapse" data-parent="#accordion" href="#collapse111">输出刀装备优化</a>
+            </h4>
+        </div>
+        <div id="collapse111" class="panel-collapse collapse">
+            <div class="panel-body">
+
+<pre><code>1，输出刀根据攻击类型：SS技能攻击，或n技能攻击，
+   武器的2,3词条选择SS技能增伤或N技能增伤。武器最好是攻暴。
+   当然有条件的全技能增伤也可以。防御无视也是可以的。 
+   1词条选择输出类型的即可，如图：   </code></pre><img src="../../../../img/wiki/nsjinengwuqi01.jpg" alt="Responsive image" class="img-responsive left-block">  
+
+<pre><code>衣服的1词条最好是全属性增加。2,3词条随意。如图：</code></pre><img src="../../../../img/wiki/yifuquanshuxing.jpg" alt="Responsive image" class="img-responsive left-block">  
+
+<pre><code>饰品的1词条最好是攻击力增加或者全属性增加。2,3词条随意。如图：</code></pre><img src="../../../../img/wiki/shipinshuxinggongji.jpg" alt="Responsive image" class="img-responsive left-block">  
+
+
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="panel-group" >
+    <div class="panel panel-default panel-info">
+        <div class="panel-heading">
+            <h4 class="panel-title" id="前排装备优化">
+                <a style="display: block" data-toggle="collapse" data-parent="#accordion" href="#collapse121">前排装备优化</a>
+            </h4>
+        </div>
+        <div id="collapse121" class="panel-collapse collapse">
+            <div class="panel-body">
+
+<pre><code>1，前排装备主要是撑血量和防御，所以装备、魂卡、词条多选择血防类型的即可，
+   如果血防的比较缺，其他含血量的，血敏，血爆也都可以。</code></pre></div>
+</div>
+</div>
+</div>
+
+<div class="panel-group" >
+    <div class="panel panel-default panel-info">
+        <div class="panel-heading">
+            <h4 class="panel-title" id="奶装备优化">
+                <a style="display: block" data-toggle="collapse" data-parent="#accordion" href="#collapse13">奶装备优化</a>
+            </h4>
+        </div>
+        <div id="collapse13" class="panel-collapse collapse">
+            <div class="panel-body">
+
+<pre><code>1，奶装备主要是攻爆，白攻和白爆，注意：增幅攻击力和增幅暴击对奶量没有影响。如图：</code></pre><img src="../../../../img/wiki/xingnaizhuangbei.jpg" alt="Responsive image" class="img-responsive left-block">  
+</div>
+</div>
+</div>
+</div>
+
+<div class="panel-group" >
+    <div class="panel panel-default panel-info">
+        <div class="panel-heading">
+            <h4 class="panel-title" id="妨害装备优化">
+                <a style="display: block" data-toggle="collapse" data-parent="#accordion" href="#collapse132">妨害装备优化</a>
+            </h4>
+        </div>
+        <div id="collapse132" class="panel-collapse collapse">
+            <div class="panel-body">
+
+<pre><code>1，个别妨害或辅助需要提高攻击力来获取加速等buff的获取权，
+   因为很多加速辅助都是施加给某属性最高攻击力的前几位buff。
+   例如木伞和木鱼人：</code></pre><img src="../../../../img/wiki/musangaogong01.jpg" alt="Responsive image" class="img-responsive left-block">  
+<img src="../../../../img/wiki/muyuren01.jpg" alt="Responsive image" class="img-responsive left-block">  
+
+
+
+</div>
+</div>
+</div>
+</div>
+
+
+</div>
+</div>
+
+
+<div class="panel panel-info">
+        <div class="panel-heading">
+        <h3 class="panel-title" id="其它">其它</h3>
+        </div>
+        <div class="panel-body">
+
+<div class="panel-group" >
+    <div class="panel panel-default  panel-info">
+        <div class="panel-heading">
+            <h4 class="panel-title" id="点火角色推荐">
+                <a style="display: block" data-toggle="collapse" data-parent="#accordion" href="#collapse113">点火角色推荐</a>
+            </h4>
+        </div>
+        <div id="collapse113" class="panel-collapse collapse">
+            <div class="panel-body">
+
+<pre><code>1，推荐几个点火性价比比较高的，除了糖猫和光狼都是可以打pvp的。
+   点火级别与图标显示一致：</code></pre><img src="../../../../img/wiki/guangqin.jpg" border="0" width="100">
+<img src="../../../../img/wiki/anshijiang.jpg" border="0" width="100">
+<img src="../../../../img/wiki/shuiyifu.jpg" border="0" width="100">
+<img src="../../../../img/wiki/tangmao.jpg" border="0" width="100">
+<img src="../../../../img/wiki/guanglang.jpg" border="0" width="100">
+<img src="../../../../img/wiki/musan.jpg" border="0" width="100">
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="panel-group" >
+    <div class="panel panel-default panel-info">
+        <div class="panel-heading">
+            <h4 class="panel-title" id="常用的火核心推荐">
+                <a style="display: block" data-toggle="collapse" data-parent="#accordion" href="#collapse124">常用的火核心推荐</a>
+            </h4>
+        </div>
+        <div id="collapse124" class="panel-collapse collapse">
+            <div class="panel-body">
+
+<pre><code>以下列举的情况是通常情况，特殊情况请特殊对待，排名顺序是按（泛用性，性能）
+1，输出 增幅攻击力 增幅暴击 攻击力 增幅敏捷
+2，妨害 增幅防御力 HP  防御力（有些妨害例如木伞也能打pvp，增幅攻击力也是可以选的）
+3，辅助 增幅防御力 HP  防御力</code></pre></div>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+
+        <hr>
+        <!-- Pager -->
+        <ul class="pager">
           
-          <!-- <li class="listing-item">
-                  <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
-                  <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
-                  </li> -->
-          <li>
-            06-19
-            <i class="fa fa-angle-double-right" aria-hidden="true"></i>
-            <a href="/lojp/2021/06/19/天命之子日服WB优化指南/" style="color: #0085a1">
-              <span>
-                天命之子日服WB优化指南
-              </span>
-            </a>
-            <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
-          </li>
           
-          <!-- <li class="listing-item">
-                  <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
-                  <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
-                  </li> -->
-          <li>
-            06-17
-            <i class="fa fa-angle-double-right" aria-hidden="true"></i>
-            <a href="/lojp/2021/06/17/天命之子日服WB暗水队通用阵容参考攻略/" style="color: #0085a1">
-              <span>
-                天命之子日服WB暗水队通用阵容参考攻略
-              </span>
-            </a>
-            <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
-          </li>
-          
-          <!-- <li class="listing-item">
-                  <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
-                  <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
-                  </li> -->
-          <li>
-            06-11
-            <i class="fa fa-angle-double-right" aria-hidden="true"></i>
-            <a href="/lojp/2021/06/11/大厅自定义解说/" style="color: #0085a1">
-              <span>
-                大厅自定义解说
-              </span>
-            </a>
-            <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
-          </li>
-          
-          <!-- <li class="listing-item">
-                  <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
-                  <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
-                  </li> -->
-          <li>
-            06-11
-            <i class="fa fa-angle-double-right" aria-hidden="true"></i>
-            <a href="/lojp/2021/06/11/誓约系统解说/" style="color: #0085a1">
-              <span>
-                誓约系统解说
-              </span>
-            </a>
-            <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
-          </li>
-          
-          <!-- <li class="listing-item">
-                  <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
-                  <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
-                  </li> -->
-          <li>
-            06-11
-            <i class="fa fa-angle-double-right" aria-hidden="true"></i>
-            <a href="/lojp/2021/06/11/Ver2-0-新系统介绍/" style="color: #0085a1">
-              <span>
-                Ver2.0 新系统介绍
-              </span>
-            </a>
-            <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
-          </li>
-          
-          <!-- <li class="listing-item">
-                  <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
-                  <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
-                  </li> -->
-          <li>
-            06-11
-            <i class="fa fa-angle-double-right" aria-hidden="true"></i>
-            <a href="/lojp/2021/06/11/基地设施解说/" style="color: #0085a1">
-              <span>
-                基地设施解说
-              </span>
-            </a>
-            <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
-          </li>
-          
-          <!-- <li class="listing-item">
-                  <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
-                  <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
-                  </li> -->
-          <li>
-            03-20
-            <i class="fa fa-angle-double-right" aria-hidden="true"></i>
-            <a href="/lojp/2021/03/20/勘探速查/" style="color: #0085a1">
-              <span>
-                资源勘探速查
-              </span>
-            </a>
-            <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
-          </li>
-          
-          <!-- <li class="listing-item">
-                  <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
-                  <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
-                  </li> -->
-          <li>
-            03-19
-            <i class="fa fa-angle-double-right" aria-hidden="true"></i>
-            <a href="/lojp/2021/03/19/情人节全图参考攻略/" style="color: #0085a1">
-              <span>
-                情人节全图参考攻略
-              </span>
-            </a>
-            <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
-          </li>
-          
-          <!-- <li class="listing-item">
-                  <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
-                  <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
-                  </li> -->
-          <li>
-            03-18
-            <i class="fa fa-angle-double-right" aria-hidden="true"></i>
-            <a href="/lojp/2021/03/18/学院医务室/" style="color: #0085a1">
-              <span>
-                学院医务室
-              </span>
-            </a>
-            <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
-          </li>
-          
-          <!-- <li class="listing-item">
-                  <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
-                  <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
-                  </li> -->
-          <li>
-            03-17
-            <i class="fa fa-angle-double-right" aria-hidden="true"></i>
-            <a href="/lojp/2021/03/17/1-5E-禽贝核师-4带1-附赠视频壁纸/" style="color: #0085a1">
-              <span>
-                1-5E 禽贝核师 4带1 附赠视频壁纸~
-              </span>
-            </a>
-            <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
+          <li class="next">
+            <a href="/lojp/2021/06/17/天命之子日服WB暗水队通用阵容参考攻略/" data-toggle="tooltip" data-placement="top" title="天命之子日服WB暗水队通用阵容参考攻略">下一篇文章 &rarr;</a>
           </li>
           
         </ul>
+
+        
+        <!-- tip start -->
+          <br>
+        <div class="tip well well-sm">
+          <p>
+
+            如果您喜欢我的帖子，別忘了返回K站给我个赞吧~非常感谢！
+          </p>
+        </div>
+        <!-- tip end -->
+        
+
+        
+        <!--<hr>-->
+
+        <!-- comments start -->
+        <!--<partial('_partial/comment',{cache: true}) > -->
+        <!-- comments end -->
+        <!--<hr>-->
+
       </div>
-      
 
-
-    </div>
-  </div>
-</div>
-
-
-      <!-- 如果开启评论功能 -->
-      
-      <hr>
-
-      
-
-      
-      
-    </div>
-
-    <!-- Sidebar Container -->
-<div class="
-    col-lg-3 col-lg-offset-0
-    col-md-3 col-md-offset-0
-    col-sm-12
-    col-xs-12
-    sidebar-container
-">
-    
-        <!--   -->
-<h5><a href="/lojp/">来访者</a></h5>
-
-<div class="widget">
-  <span>
-    访问量： <b><i><span id="busuanzi_value_site_pv"><i class="fa fa-spinner fa-spin"></i></span></i></b>
-  </span>
-  <br />
-  <span>
-    来访者总计： <b><i><span id="busuanzi_value_site_uv"><i class="fa fa-spinner fa-spin"></i></span></i></b>
-  </span>
-</div>
-
-<!--   -->
-
-        <hr>
-    
-        <!-- Short About -->
-<section class="visible-xs visible-md visible-lg">
-  <h5><a href="/lojp/about/">关于我</a></h5>
-  <div class="short-about">
+      <!-- Catalog: Tabe of Content -->
+      <!-- Table of Contents -->
 
     
-    <img id="avatar_pic" src="/lojp/img/avatar/fatpeople.jpg" alt="avatar_pic" style="box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, .5);
-    -moz-box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, .5);
-    -webkit-box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, .5);" />
-    
-
-    
-    <p>爱萌新~帮助萌新~</p>
-    
-
-    <!-- SNS Link -->
-    <ul class="list-inline">
-      
-
-      
-      <li>
-        <a target="_blank" href="https://github.com/noname">
-          <span class="fa-stack fa-lg">
-            <i class="fa fa-circle fa-stack-2x"></i>
-            <i class="fa fa-github fa-stack-1x fa-inverse"></i>
-          </span>
-        </a>
-      </li>
-      
-
-      
-      <li>
-        <a target="_blank" href="https://twitter.com/noname">
-          <span class="fa-stack fa-lg">
-            <i class="fa fa-circle fa-stack-2x"></i>
-            <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
-          </span>
-        </a>
-      </li>
-      
-
-      
-      <li>
-        <a target="_blank" href="https://www.instagram.com/noname">
-          <span class="fa-stack fa-lg">
-            <i class="fa fa-circle fa-stack-2x"></i>
-            <i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
-          </span>
-        </a>
-      </li>
-      
-
-      
-
-      
-
-      
-
-      
-      <li>
-        <a target="_blank" href="http://weibo.com/noname">
-          <span class="fa-stack fa-lg">
-            <i class="fa fa-circle fa-stack-2x"></i>
-            <i class="fa fa-weibo fa-stack-1x fa-inverse"></i>
-          </span>
-        </a>
-      </li>
-      
-
-    </ul>
-  </div>
-</section>
-
-        <hr>
-    
+      <aside id="sidebar">
+        <div id="toc" class="toc-article">
+        <strong class="toc-title">目录</strong>
         
-<!-- <h5>RECENT POSTS</h5> -->
-<h5><a href="/lojp/">最近发布</a></h5>
-<div class="widget">
-  <ul>
-    
-    <a href="../2021/06/19/%E5%A4%A9%E5%91%BD%E4%B9%8B%E5%AD%90%E6%97%A5%E6%9C%8DWB%E4%BC%98%E5%8C%96%E6%8C%87%E5%8D%97/">
-      <li>天命之子日服WB优化指南</li>
-    </a>
-    
-    <a href="../2021/06/17/%E5%A4%A9%E5%91%BD%E4%B9%8B%E5%AD%90%E6%97%A5%E6%9C%8DWB%E6%9A%97%E6%B0%B4%E9%98%9F%E9%80%9A%E7%94%A8%E9%98%B5%E5%AE%B9%E5%8F%82%E8%80%83%E6%94%BB%E7%95%A5/">
-      <li>天命之子日服WB暗水队通用阵容参考攻略</li>
-    </a>
-    
-    <a href="../2021/06/11/%E5%A4%A7%E5%8E%85%E8%87%AA%E5%AE%9A%E4%B9%89%E8%A7%A3%E8%AF%B4/">
-      <li>大厅自定义解说</li>
-    </a>
-    
-    <a href="../2021/06/11/%E8%AA%93%E7%BA%A6%E7%B3%BB%E7%BB%9F%E8%A7%A3%E8%AF%B4/">
-      <li>誓约系统解说</li>
-    </a>
-    
-    <a href="../2021/06/11/Ver2-0-%E6%96%B0%E7%B3%BB%E7%BB%9F%E4%BB%8B%E7%BB%8D/">
-      <li>Ver2.0 新系统介绍</li>
-    </a>
-    
-  </ul>
-</div>
-
-
-        <hr>
-    
+          <ol class="toc-nav"><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#前言"><span class="toc-nav-number">1.</span> <span class="toc-nav-text">前言</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#阵容配置优化"><span class="toc-nav-number">2.</span> <span class="toc-nav-text">阵容配置优化</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-4"><a class="toc-nav-link" href="#站位优化"><span class="toc-nav-number">2.1.</span> <span class="toc-nav-text">
+                站位优化
+            </span></a></li><li class="toc-nav-item toc-nav-level-4"><a class="toc-nav-link" href="#加速优化"><span class="toc-nav-number">2.2.</span> <span class="toc-nav-text">
+                加速优化
+            </span></a></li></ol></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#技能优化"><span class="toc-nav-number">3.</span> <span class="toc-nav-text">技能优化</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-4"><a class="toc-nav-link" href="#如何设置技能顺序"><span class="toc-nav-number">3.1.</span> <span class="toc-nav-text">
+                如何设置技能顺序
+            </span></a></li><li class="toc-nav-item toc-nav-level-4"><a class="toc-nav-link" href="#角色技能顺序优化"><span class="toc-nav-number">3.2.</span> <span class="toc-nav-text">
+                角色技能顺序优化
+            </span></a></li><li class="toc-nav-item toc-nav-level-4"><a class="toc-nav-link" href="#队长技设置"><span class="toc-nav-number">3.3.</span> <span class="toc-nav-text">
+                队长技设置
+            </span></a></li></ol></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#装备优化"><span class="toc-nav-number">4.</span> <span class="toc-nav-text">装备优化</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-4"><a class="toc-nav-link" href="#输出刀装备优化"><span class="toc-nav-number">4.1.</span> <span class="toc-nav-text">
+                输出刀装备优化
+            </span></a></li><li class="toc-nav-item toc-nav-level-4"><a class="toc-nav-link" href="#前排装备优化"><span class="toc-nav-number">4.2.</span> <span class="toc-nav-text">
+                前排装备优化
+            </span></a></li><li class="toc-nav-item toc-nav-level-4"><a class="toc-nav-link" href="#奶装备优化"><span class="toc-nav-number">4.3.</span> <span class="toc-nav-text">
+                奶装备优化
+            </span></a></li><li class="toc-nav-item toc-nav-level-4"><a class="toc-nav-link" href="#妨害装备优化"><span class="toc-nav-number">4.4.</span> <span class="toc-nav-text">
+                妨害装备优化
+            </span></a></li></ol></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#其它"><span class="toc-nav-number">5.</span> <span class="toc-nav-text">其它</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-4"><a class="toc-nav-link" href="#点火角色推荐"><span class="toc-nav-number">5.1.</span> <span class="toc-nav-text">
+                点火角色推荐
+            </span></a></li><li class="toc-nav-item toc-nav-level-4"><a class="toc-nav-link" href="#常用的火核心推荐"><span class="toc-nav-number">5.2.</span> <span class="toc-nav-text">
+                常用的火核心推荐
+            </span></a></li></ol></li></ol>
         
-    <!-- <h5>ARCHIVES</h5> -->
-    <h5><a href="/lojp/archives/">归档</a></h5>
-    <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="../archives/2021/06/">June 2021</a><span class="archive-list-count">6</span></li><li class="archive-list-item"><a class="archive-list-link" href="../archives/2021/03/">March 2021</a><span class="archive-list-count">4</span></li></ul>
+        </div>
+      </aside>
+    
+
+
+      <!-- Sidebar Container -->
+      <div class="
+                col-lg-8 col-lg-offset-1
+                col-md-10 col-md-offset-1
+                sidebar-container">
+
+        <!-- Featured Tags -->
+        
+
+        <!-- Friends Blog -->
+        
+      </div>
     </div>
-
-
-        <hr>
-    
-        <!-- Categories -->
-
-<!-- <h5>categories</h5> -->
-<h5><a href="/lojp/categories/">分类</a></h5>
-<div class="widget">
-  <ul>
-    
-    <a href="/lojp/categories/#1-5E 禽贝核师 4带1 附赠视频壁纸~">
-      <li>1-5E 禽贝核师 4带1 附赠视频壁纸~</li>
-    </a>
-    
-  </ul>
-</div>
-
-
-        <hr>
-    
-</div>
-
-    
   </div>
-</div>
+</article>
+
+
+
 
 
 	<!-- Footer (contains ThemeColor、viewer) -->
